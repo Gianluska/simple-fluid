@@ -1,7 +1,7 @@
-import { Box, OrbitControls } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import { useRef } from "react";
 import type { Mesh } from "three";
+import "@components/FluidSimulation";
 
 export function Home() {
   const boxRef = useRef<Mesh>(null);
@@ -13,11 +13,6 @@ export function Home() {
   
   return (
     <>
-      <OrbitControls />
-      <Box ref={boxRef} args={[1, 1, 1]} rotation={[0.5, 0, 0]}>
-        <meshNormalMaterial />
-      </Box>
-      <ambientLight />
     </>
   )
 }
