@@ -1,4 +1,4 @@
-export const baseVertexShader = `
+export const baseVertexShaderText = `
   precision highp float;
 
   attribute vec2 aPosition;

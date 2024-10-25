@@ -1,4 +1,4 @@
-export const advectionShader = `
+export const advectionShaderText = `
   precision highp float;
   precision highp sampler2D;
 
@@ -32,7 +32,7 @@ export const advectionShader = `
       vec2 coord = vUv - dt * texture2D(uVelocity, vUv).xy * texelSize;
       vec4 result = texture2D(uSource, coord);
     #endif
-    
+
       float decay = 1.0 + dissipation * dt;
       gl_FragColor = result / decay;
   }

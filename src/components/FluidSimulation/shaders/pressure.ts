@@ -1,4 +1,4 @@
-export const pressureShader = `
+export const pressureShaderText = `
   precision mediump float;
   precision mediump sampler2D;
 

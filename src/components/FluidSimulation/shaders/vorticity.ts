@@ -1,4 +1,4 @@
-export const vorticityShader = `
+export const vorticityShaderText = `
   precision highp float;
   precision highp sampler2D;
 

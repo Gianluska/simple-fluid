@@ -1,4 +1,4 @@
-export const sunraysShader = `
+export const sunraysShaderText = `
   precision highp float;
   precision highp sampler2D;
 

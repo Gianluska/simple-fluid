@@ -1,4 +1,4 @@
-export const gradientSubtractShader = `
+export const gradientSubtractShaderText = `
   precision mediump float;
   precision mediump sampler2D;
 

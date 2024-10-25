@@ -1,4 +1,4 @@
-export const clearShader = `
+export const clearShaderText = `
   precision mediump float;
   precision mediump sampler2D;
 

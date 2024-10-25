@@ -1,4 +1,4 @@
-export const colorShader = `
+export const colorShaderText = `
   precision mediump float;
 
   uniform vec4 color;

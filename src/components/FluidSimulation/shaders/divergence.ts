@@ -1,4 +1,4 @@
-export const divergenceShader = `
+export const divergenceShaderText = `
   precision mediump float;
   precision mediump sampler2D;
 

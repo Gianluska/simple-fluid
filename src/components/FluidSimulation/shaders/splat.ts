@@ -1,4 +1,4 @@
-export const splatShader = `
+export const splatShaderText = `
   precision highp float;
   precision highp sampler2D;
 

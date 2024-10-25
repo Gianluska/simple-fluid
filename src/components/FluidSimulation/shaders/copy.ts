@@ -1,4 +1,4 @@
-export const copyShader = `
+export const copyShaderText = `
   precision mediump float;
   precision mediump sampler2D;
 

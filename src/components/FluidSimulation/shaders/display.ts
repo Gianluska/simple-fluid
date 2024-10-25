@@ -1,4 +1,4 @@
-export const displayShader = `
+export const displayShaderText = `
   precision highp float;
   precision highp sampler2D;
 

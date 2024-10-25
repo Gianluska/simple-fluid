@@ -1,4 +1,4 @@
-export const curlShader = `
+export const curlShaderText = `
   precision mediump float;
   precision mediump sampler2D;
 
