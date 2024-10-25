@@ -702,7 +702,7 @@ function splat(x, y, dx, dy, color) {
   gl.uniform1i(splatProgram.uniforms.uTarget, velocity.read.attach(0));
   gl.uniform1f(splatProgram.uniforms.aspectRatio, canvas.width / canvas.height);
   gl.uniform2f(splatProgram.uniforms.point, x, y);
-  gl.uniform3f(splatProgram.uniforms.color, dx, dy, 0.0);
+  gl.uniform3f(splatProgram.uniforms.color, dx, dy, 1.0);
   gl.uniform1f(splatProgram.uniforms.radius, correctRadius(0.3 / 100.0));
   blit(velocity.write);
   velocity.swap();
@@ -745,7 +745,7 @@ function updatePointerDownData(pointer, id, posX, posY) {
   pointer.prevTexcoordY = pointer.texcoordY;
   pointer.deltaX = 0;
   pointer.deltaY = 0;
-  pointer.color = { r: 1, g: 1, b: 1 };
+  pointer.color = { r: 9, g: 9, b: 9 };
 }
 
 function updatePointerMoveData(pointer, posX, posY) {
