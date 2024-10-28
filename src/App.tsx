@@ -1,19 +1,16 @@
+import FluidPlane from "@components/Fluid";
 import { Canvas } from "@react-three/fiber";
-import { Home } from "pages/Home";
-
-import "@components/FluidSimulation";
 
 function App() {
   return (
     <div className="w-full h-screen">
-      {/* <Canvas
+      <Canvas
+      camera={{ position: [0, 0, 5], fov: 75 }}
         className="bg-slate-950"
         dpr={[1, 2]}
-        shadows
-        camera={{ position: [0, 5, 15], fov: 60 }}
       >
-        <Home />
-      </Canvas> */}
+        <FluidPlane />
+      </Canvas>
     </div>
   );
 }
